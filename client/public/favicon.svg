@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="viceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4FA3" />
+      <stop offset="50%" stop-color="#FF9B61" />
+      <stop offset="100%" stop-color="#35DDF5" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#080A12" />
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="url(#viceGrad)" stroke-width="3" />
+  <text x="32" y="44" font-family="'Anton', 'Bebas Neue', Impact, sans-serif" font-size="34" font-weight="900" fill="url(#viceGrad)" text-anchor="middle" letter-spacing="2">VV</text>
+</svg>

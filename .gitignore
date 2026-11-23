@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Production build output
+client/dist/
+dist/
+build/
+
+# Environment files & secrets
+.env
+.env.local
+.env.*.local
+server/.env
+
+# Local SQLite databases & cache
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+server/data/*.sqlite
+server/data/*.sqlite-journal
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

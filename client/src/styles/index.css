@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: #080A12;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(255, 42, 133, 0.28) 0%, rgba(255, 110, 64, 0.18) 25%, transparent 60%),
+    radial-gradient(circle at 90% 25%, rgba(255, 79, 163, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 10% 40%, rgba(53, 221, 245, 0.14) 0%, transparent 45%),
+    radial-gradient(circle at 85% 60%, rgba(255, 42, 133, 0.16) 0%, transparent 45%),
+    radial-gradient(circle at 15% 75%, rgba(255, 134, 66, 0.14) 0%, transparent 45%),
+    radial-gradient(circle at 75% 90%, rgba(53, 221, 245, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 50% 100%, rgba(255, 42, 133, 0.20) 0%, rgba(138, 28, 120, 0.15) 30%, transparent 60%);
+  background-attachment: fixed;
+}
+
+/* Authentic GTA 6 Sunset Haze & Sky */
+.gta6-sunset-haze {
+  background: 
+    radial-gradient(ellipse at 50% 0%, rgba(255, 42, 133, 0.38) 0%, rgba(255, 110, 64, 0.22) 35%, rgba(68, 14, 60, 0.15) 60%, transparent 80%),
+    linear-gradient(180deg, rgba(255, 42, 133, 0.15) 0%, rgba(24, 7, 34, 0.8) 50%, #080A12 100%);
+}
+
+.gta6-gradient-text {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFE2EC 25%, #FF4FA3 65%, #FF8642 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 15px rgba(255, 42, 133, 0.6));
+}
+
+.gta6-card {
+  background: linear-gradient(135deg, rgba(28, 16, 36, 0.85) 0%, rgba(16, 20, 33, 0.85) 100%);
+  border: 1px solid rgba(255, 79, 163, 0.2);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.gta6-card:hover {
+  border-color: rgba(255, 79, 163, 0.6);
+  box-shadow: 0 14px 40px -10px rgba(0, 0, 0, 0.8), 0 0 25px -2px rgba(255, 42, 133, 0.4);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080A12;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E2738;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 79, 163, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF4FA3;
+  box-shadow: 0 0 10px #FF4FA3;
+}
+
+/* Typography styles */
+.font-heading {
+  font-family: 'Bebas Neue', 'Anton', sans-serif;
+  letter-spacing: 0.06em;
+}
+
+.font-display {
+  font-family: 'Anton', 'Bebas Neue', sans-serif;
+  letter-spacing: 0.08em;
+}
+
+/* Neon Glows */
+.text-glow-pink {
+  text-shadow: 0 0 12px rgba(255, 79, 163, 0.6), 0 0 25px rgba(255, 79, 163, 0.3);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 12px rgba(53, 221, 245, 0.6), 0 0 25px rgba(53, 221, 245, 0.3);
+}
+
+.text-glow-orange {
+  text-shadow: 0 0 12px rgba(255, 155, 97, 0.6), 0 0 25px rgba(255, 155, 97, 0.3);
+}
+
+.glow-border-pink {
+  border-color: rgba(255, 79, 163, 0.4);
+  box-shadow: 0 0 15px rgba(255, 79, 163, 0.25);
+}
+
+.glow-border-cyan {
+  border-color: rgba(53, 221, 245, 0.4);
+  box-shadow: 0 0 15px rgba(53, 221, 245, 0.25);
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(16, 20, 33, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(21, 27, 43, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 79, 163, 0.35);
+  box-shadow: 0 14px 30px -10px rgba(0, 0, 0, 0.8), 0 0 20px -3px rgba(255, 79, 163, 0.3);
+}
+
+/* Animated Vice Gradient Text */
+.gradient-text-vice {
+  background: linear-gradient(135deg, #FF4FA3 0%, #FF9B61 50%, #35DDF5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-sunset {
+  background: linear-gradient(135deg, #FF9B61 0%, #FF4FA3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-cyan {
+  background: linear-gradient(135deg, #35DDF5 0%, #A855F7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Scanline / Grain Subtle Overlay */
+.scanline-bg {
+  background-image: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+  background-size: 100% 4px;
+}
+
+/* Subtle Floating Particle Keyframes */
+@keyframes floatDust {
+  0% {
+    transform: translateY(0px) translateX(0px) scale(0.8);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translateY(-50px) translateX(20px) scale(1.1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100px) translateX(-15px) scale(0.9);
+    opacity: 0;
+  }
+}
+
+.particle-dust-1 {
+  animation: floatDust 7s ease-in-out infinite;
+}
+
+.particle-dust-2 {
+  animation: floatDust 9s ease-in-out infinite 2s;
+}
+
+.particle-dust-3 {
+  animation: floatDust 11s ease-in-out infinite 4s;
+}
+
+/* Smooth neon button pulse */
+@keyframes neonPulsePink {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(255, 42, 133, 0.55), 0 0 50px rgba(255, 42, 133, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(255, 42, 133, 0.8), 0 0 70px rgba(255, 42, 133, 0.4);
+  }
+}
+
+.pulse-neon-pink {
+  animation: neonPulsePink 4s ease-in-out infinite;
+}

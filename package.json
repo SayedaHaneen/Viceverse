@@ -1,0 +1,11 @@
+{
+  "name": "viceverse",
+  "version": "1.0.0",
+  "description": "VICEVERSE — Gaming Creator Hub & Digital Marketplace",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build"
+  }
+}
