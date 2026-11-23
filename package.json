@@ -1,12 +1,14 @@
 {
   "name": "viceverse",
   "version": "1.0.0",
-  "description": "VICEVERSE — Gaming Creator Hub & Digital Marketplace",
-  "main": "server/server.js",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
-    "build": "cd client && npm install && npm run build && cd ../server && npm install",
-    "start": "cd server && node server.js",
-    "server": "cd server && npm start",
-    "client": "cd client && npm run dev"
+    "build": "npm run build --workspace=client",
+    "start": "node server/server.js",
+    "dev": "npm run dev --workspace=client"
   }
 }
